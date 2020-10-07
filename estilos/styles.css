@@ -1,0 +1,51 @@
+header{
+    background-color:#EAC926; ;
+    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-size: 12px;
+}
+
+.titulares{
+    font-size: 24px;
+    background-color: #ebebeb;
+}
+
+nav ul {
+    list-style: none; /* Remove default bullets */
+}
+
+nav ul li a{
+    color: black;
+}
+
+.precio{
+    font-size: 18px;
+}
+
+.descuento{
+    font-size: 16px;
+}
+
+.descripcion{
+    font-size: 16px;
+}
+
+.icono{
+    color: #39b54a;
+}
+
+.imagen{
+    width: 300px;
+}
+
+.separador{
+    height: 25px;
+    width: 300px;
+    background-color: #ebebeb;
+}
