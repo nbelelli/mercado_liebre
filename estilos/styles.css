@@ -49,3 +49,8 @@ nav ul li a{
     width: 300px;
     background-color: #ebebeb;
 }
+
+
+input:focus{
+    outline: #EAC926 2px solid;
+}
