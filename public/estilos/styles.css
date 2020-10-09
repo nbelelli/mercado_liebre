@@ -52,3 +52,7 @@ nav ul li a {
 input:focus {
 	outline: #eac926 2px solid;
 }
+
+.logo {
+	width: 50%;
+}
