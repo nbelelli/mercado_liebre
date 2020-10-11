@@ -1,119 +1,215 @@
 <!DOCTYPE html>
 <html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./estilos/styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+		/>
+		<title>MercadoLiebre</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <title>MercadoLiebre</title>
-</head>
+	<body>
+		<header>
+			<div class="logo">
+				<img src="./images/logo-mercado-liebre.svg" alt="Logo MercadoLiebre" />
+			</div>
 
-<body>
+			<div>
+				<input
+					type="text"
+					name="search"
+					id="search"
+					placeholder="Buscar productos o marcas"
+				/>
+			</div>
 
-    <header>
-        <div>
-            <img src="./images/logo-mercado-liebre.svg" alt="Logo MercadoLiebre" width="500">
-        </div>
+			<div><i class="fas fa-search"></i></div>
 
-        <p> <i class="fas fa-hand-holding-usd"></i>
+			<div>
+				<i class="fas fa-hand-holding-usd"></i>
 
-            Buscar productos, marcas y más.</p>
+				Buscar productos, marcas y más.
+			</div>
 
-        <p>Comprá en cuotas y sin tarjeta de crédito</p>
+			<div>Comprá en cuotas y sin tarjeta de crédito</div>
 
-        <nav>
-            <ul>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Tiendas Oficiales</a></li>
-                <li><a href="#">Vender</a></li>
-                <li><a href="#">Ayuda</a></li>
-            </ul>
+			<nav>
+				<ul>
+					<li><a href="#">Ofertas</a></li>
+					<li><a href="#">Tiendas Oficiales</a></li>
+					<li><a href="#">Vender</a></li>
+					<li><a href="#">Ayuda</a></li>
+				</ul>
 
-            <ul>
-                <li><a href="#">Creá tu cuenta <i class="fas fa-address-card"></i></a></i></li>
-                <li><a href="#">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
-            </ul>
-        </nav>
+				<ul>
+					<li>
+						<a href="/register"
+							>Creá tu cuenta <i class="fas fa-address-card"></i
+						></a>
+					</li>
+					<li>
+						<a href="#">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+					</li>
+					<li>
+						<a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-    </header>
+		<main>
+			<form action="index.html" method="post">
+				<!-- datos usuario -->
+				<div>
+					<div>
+						<input
+							type="text"
+							name="nombreapellido"
+							id="nombreapellido"
+							placeholder="Nombre y Apellido"
+						/>
+					</div>
+					<div>
+						<input
+							type="text"
+							name="userid"
+							id="userid"
+							placeholder="Nombre de usuario"
+						/>
+					</div>
+					<div>
+						<input type="email" name="email" id="email" placeholder="E-mail" />
+					</div>
+					<div><label for="birthDate">Fecha de nacimiento</label></div>
+					<div><input type="date" name="birthDate" id="birthDate" /></div>
+					<div>
+						<input
+							type="text"
+							name="address"
+							id="address"
+							placeholder="Domicilio"
+						/>
+					</div>
+				</div>
+				<!-- perfil del usuario -->
+				<div>
+					<div>Perfil del usuario</div>
+					<div>
+						<input
+							type="radio"
+							name="PerfilDelUsuario"
+							id="comprador"
+							value="comprador"
+						/>
+						<label for="comprador">Comprador</label>
+						<input
+							type="radio"
+							name="PerfilDelUsuario"
+							id="vendedor"
+							value="vendedor"
+						/>
+						<label for="vendedor">Vendedor</label>
+					</div>
+				</div>
 
-    <main>
-        <form action="index.html" method="post">
-            <!-- datos usuario -->
-            <div>
-                <div><input type="text" name="nombreapellido" id="nombreapellido" placeholder="Nombre y Apellido"></div>
-                <div><input type="text" name="userid" id="userid" placeholder="Nombre de usuario"></div>
-                <div><input type="email" name="email" id="email" placeholder="E-mail"></div>
-                <div><label for="birthDate">Fecha de nacimiento</label></div>
-                <div><input type="date" name="birthDate" id="birthDate"></div>
-                <div><input type="text" name="address" id="address" placeholder="Domicilio"></div>
-            </div>
-            <!-- perfil del usuario -->
-            <div>
-                <div>Perfil del usuario</div>
-                <div>
-                    <input type="radio" name="PerfilDelUsuario" id="comprador" value="comprador">
-                    <label for="comprador">Comprador</label>
-                    <input type="radio" name="PerfilDelUsuario" id="vendedor" value="vendedor">
-                    <label for="vendedor">Vendedor</label>
-                </div>
-            </div>
+				<div>
+					<div>Intereses</div>
+					<div>
+						<label for="interes_electro">Electro</label>
+						<input
+							type="checkbox"
+							name="interes"
+							id="interes_electro"
+							value="interes_electro"
+						/>
+						<label for="interes_moda">Moda</label>
+						<input
+							type="checkbox"
+							name="interes"
+							id="interes_moda value='interes_moda'"
+						/>
+						<label for="interes_hogar">Hogar</label>
+						<input
+							type="checkbox"
+							name="interes"
+							id="interes_hogar"
+							value="interes_hogar"
+						/>
+						<label for="interes_jugueteria">Juguetería</label>
+						<input
+							type="checkbox"
+							name="interes"
+							id="interes_jugueteria"
+							value="interes_jugueteria"
+						/>
+						<label for="interes_vidaSana">Vida Sana</label>
+						<input
+							type="checkbox"
+							name="interes"
+							id="interes_vidaSana"
+							value="interes_vidaSana"
+						/>
+					</div>
+				</div>
+				<!-- foto -->
+				<div>
+					<div>Elegi tu foto de usuario</div>
+					<div><input type="file" name="" id="profile_pic" /></div>
+				</div>
+				<!-- password -->
+				<div>
+					<div>
+						<input
+							type="password"
+							name="userPassword"
+							id="userPassword"
+							placeholder="Elegí tu contraseña"
+						/>
+					</div>
+					<div>
+						<input
+							type="password"
+							name="userPasswordConfirm"
+							id="userPasswordConfirm"
+							placeholder="Confirmá tu contraseña"
+						/>
+					</div>
+				</div>
+				<!-- submit -->
+				<div><button type="submit">Enviar</button></div>
+			</form>
+		</main>
 
-            <div>
-                <div>Intereses</div>
-                <div>
-                    <label for="interes_electro">Electro</label>
-                    <input type="checkbox" name="interes" id="interes_electro" value="interes_electro">
-                    <label for="interes_moda">Moda</label>
-                    <input type="checkbox" name="interes" id="interes_moda value='interes_moda'">
-                    <label for="interes_hogar">Hogar</label>
-                    <input type="checkbox" name="interes" id="interes_hogar" value='interes_hogar'>
-                    <label for="interes_jugueteria">Juguetería</label>
-                    <input type="checkbox" name="interes" id="interes_jugueteria" value="interes_jugueteria">
-                    <label for="interes_vidaSana">Vida Sana</label>
-                    <input type="checkbox" name="interes" id="interes_vidaSana" value="interes_vidaSana">
-                </div>
-            </div>
-            <!-- foto -->
-            <div>
-                <div>Elegi tu foto de usuario</div>
-                <div><input type="file" name="" id="profile_pic"></div>
-            </div>
-            <!-- password -->
-            <div>
-                <div><input type="password" name="userPassword" id="userPassword" placeholder="Elegí tu contraseña"></div>
-                <div><input type="password" name="userPasswordConfirm" id="userPasswordConfirm" placeholder="Confirmá tu contraseña"></div>
-            </div>
-            <!-- submit -->
-            <div><button type="submit">Enviar</button></div>
-            
-   
-        </form>
+		<footer>
+			<div class="icono"><i class="fas fa-credit-card"></i></div>
+			<h3>Pagá con tarjeta o en efectivo</h3>
+			<p>
+				Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivoen
+				puntos de pago. ¡Y siempre es seguro!
+			</p>
 
-    </main>
+			<div class="icono"><i class="fas fa-gift"></i></div>
+			<h3>Envío gratis desde los $ 2.500</h3>
+			<p>
+				Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles
+				de productos. Es un beneficio de MercadoPuntos
+			</p>
 
-    <footer>
-        <div class="icono"><i class="fas fa-credit-card"></i></div>
-        <h3>Pagá con tarjeta o en efectivo </h3>
-        <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivoen puntos de pago. ¡Y siempre es seguro!</p>
-    
-        <div class='icono'><i class="fas fa-gift"></i></div>
-        <h3>Envío gratis desde los $ 2.500</h3>
-        <p>Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de productos. Es un beneficio de MercadoPuntos</p>
-    
-        <div class="icono"><i class="fas fa-user-lock"></i></div>
-        <h3>Seguridad, de principio a fin</h3>
-        <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estás siempre prtegid@</p>
-    
-        <p>Copyright © 1999-2019 MercadoLiebre S.R.L</p>
-    
+			<div class="icono"><i class="fas fa-user-lock"></i></div>
+			<h3>Seguridad, de principio a fin</h3>
+			<p>
+				¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas
+				hacer porque estás siempre prtegid@
+			</p>
 
-    </footer>
-
-</body>
-
-
+			<p>Copyright © 1999-2019 MercadoLiebre S.R.L</p>
+		</footer>
+	</body>
 </html>
