@@ -1,9 +1,21 @@
+* {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+}
+
 header {
 	background-color: #eac926;
 }
 
-body {
-	font-family: 'Roboto', sans-serif;
+main {
+	background-color: #e0e0e0;
+	/* width: 90%; */
+	padding: 10px;
+}
+
+main article {
+	background-color: white;
 }
 
 p {
@@ -12,7 +24,15 @@ p {
 
 .titulares {
 	font-size: 24px;
-	background-color: #ebebeb;
+	/* background-color: #ebebeb; */
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+	vertical-align: auto;
+}
+
+nav {
+	display: none;
 }
 
 nav ul {
@@ -45,7 +65,7 @@ nav ul li a {
 
 .separador {
 	height: 25px;
-	width: 300px;
+	width: 100%;
 	background-color: #ebebeb;
 }
 
@@ -55,4 +75,65 @@ input:focus {
 
 .logo {
 	width: 50%;
+}
+
+.searchBar {
+	width: 50%;
+}
+
+.hamburguerButton {
+	height: 40px;
+	width: 40px;
+	background-color: #0044aa;
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.hamburguerButton:hover {
+	background-color: #0022aa;
+	cursor: pointer;
+}
+
+.banner {
+	display: block;
+	width: 100%;
+}
+
+.tarjetaProducto {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 20px;
+}
+
+footer {
+	padding: 20px 5px 20px 5px;
+}
+
+footer article {
+	margin-bottom: 20px;
+}
+
+.login_input {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: 0px;
+}
+
+.button_enviar {
+	color: white;
+	background-color: #0044aa;
+	padding: 10px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	width: 100%;
+	border: 0px;
 }
