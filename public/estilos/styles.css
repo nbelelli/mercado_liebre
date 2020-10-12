@@ -78,6 +78,7 @@ input:focus {
 }
 
 .searchBar {
+	display: block;
 	width: 50%;
 }
 
